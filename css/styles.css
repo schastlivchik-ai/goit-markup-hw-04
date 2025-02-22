@@ -26,6 +26,7 @@ ol {
 
 a {
   text-decoration: none;
+
 }
 
 img {
@@ -41,14 +42,17 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .span-header {
   color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .span-footer {
   color: #f4f4fd;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo:hover span,
@@ -72,6 +76,7 @@ a:focus {
 .header {
   border-bottom: 1px solid #e7e9fc;
   background: #fff;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .navi-link {
@@ -81,7 +86,8 @@ a:focus {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
-  display: block
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -147,6 +153,7 @@ a:focus {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-title.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .solutions .container {
@@ -204,7 +211,7 @@ a:focus {
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border: none;
-
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -257,11 +264,12 @@ a:focus {
   background: #f4f4fd;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  height: 112px;
+  margin-bottom: 8px;
 }
 
 .about-us .head {
   margin-bottom: 8px;
-  margin-top: 8px;
 }
 
 .visually-hidden {
@@ -321,7 +329,8 @@ a:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.empl-contacts .link:hover {
+.empl-contacts .link:hover,
+.empl-contacts .link:focus {
   background-color: #404bbf;
 }
 
@@ -372,6 +381,7 @@ a:focus {
 .portfolio .item:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .app-img {
@@ -407,9 +417,13 @@ a:focus {
   padding: 100px 0
 }
 
-.footer .list {
+.footer .container {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+
+.footer .list {
+  margin-right: 120px;
 }
 
 .footer .logo {
@@ -417,12 +431,13 @@ a:focus {
   margin-bottom: 16px;
 }
 
-.footer .social {
+.social .text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .social-list {
